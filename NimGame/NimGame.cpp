@@ -2,10 +2,30 @@
 //
 
 #include <iostream>
+class Matches {       // The class
+public:             // Access specifier
+    int Remaining;        // Attribute (int variable)
+    char MatchSymbol;
+    void DisplatMatches() {
+        std::string MatchString;
+        for (int i = 0; i < Remaining; i++) {
+            MatchString += MatchSymbol;
+        }
+                 // Method/function defined inside the class
+        std::cout << MatchString;
+    }                     // Attribute (string variable)
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    Matches matches;
+    matches.Remaining = 24;
+    matches.MatchSymbol = 'I';
+
+    matches.DisplatMatches();
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
