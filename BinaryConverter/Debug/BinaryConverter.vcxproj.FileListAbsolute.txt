@@ -1,0 +1,2 @@
+C:\Users\emilj\Documents\GitHub\marczaku-gp20-2021-0524-nim-game-EmilHuzell\BinaryConverter\Debug\BinaryConverter.exe
+C:\Users\emilj\Documents\GitHub\marczaku-gp20-2021-0524-nim-game-EmilHuzell\BinaryConverter\Debug\BinaryConverter.pdb
