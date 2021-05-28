@@ -3,12 +3,18 @@
 
 #include <iostream>
 //prints binary sequence of a number
-void binaryConverterPrinter() {
+void binaryConverter() {
 
     int number;
     std::cin >> number;
     std::cout << "0b";
-        for (int i = 8; i >= 0; i--) 
+    if (number < 0) {
+        std::cout << "1";
+    }
+    else {
+        std::cout << "0";
+    }
+        for (int i = 7; i >= 0; i--) 
         {
             if (pow(2, i) <= number) {
                 std::cout << "1";
@@ -21,10 +27,22 @@ void binaryConverterPrinter() {
     
 
 }
+void binaryConverter2(){
+    int number;
+    std::cin >> number;
+    int divisions = 0;
+    
+    while (number >> divisions > 0) {
+        std::cout << (number >> divisions);
+        std::cout << 1;
+        divisions++;
+    }
+    
+}
 int main()
 {
-    binaryConverterPrinter();
-
+    binaryConverter();
+    binaryConverter2();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
